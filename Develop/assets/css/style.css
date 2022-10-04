@@ -1,13 +1,14 @@
-* {
+* { 
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/* this is a test commen */
+/* background color of the page */
 body {
     background-color: #d9dcd6;
 }
 
+/* background colour blue, tesxt white, font change, padding to add border around the content by 20px */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,41 +16,50 @@ body {
     color: #ffffff;
 }
 
+/* header to take up as much width as necessary at a font size of 48px */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* create seo header in light grey */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* create in block elements within the header top right away from the margin in a padding while floating allowing it to stay aline with header while still remaining in the flow of the rest of the page */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+    /* font -family property specifies a list of fonts to be used */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size property sets the size of a font */
     font-size: 20px;
 }
-
+/* no style type in the list (removes bullet points) */
 .header div ul {
     list-style-type: none;
 }
 
+/* header 2px from the margin on the left*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* headers colour in the top right */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* paragraph sizing 16px*/
 p {
     font-size: 16px;
 }
 
+/*main picture height and width sits as the background of the page behind other elements in the center*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +69,26 @@ p {
     background-position: center;
 }
 
+/*class: moves image in the seach engine optimization to the left with a margin of 25px pushed from the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* class: content displayed to take up as much space in the box margin 20px from left of content box with a width of 75% of the page */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* class: content displayed on the right 20 px padding around the content, margin 20px from the right items moved below the floating elements, content floats to the right. width to take uo 20% of the space remainding and height to take up to 100% */ 
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,6 +100,7 @@ p {
     background-color: #2589bd;
 }
 
+/* class: all white text and spaced margin 32px */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -101,6 +116,7 @@ p {
     color: #ffffff;
 }
 
+/* class: HEADERS - margin 10px from bottom, text align center */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -116,6 +132,7 @@ p {
     text-align: center;
 }
 
+/*class: images takes up as much width available, margin 10px all around image at a max width of 150px */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -134,6 +151,7 @@ p {
     max-width: 150px;
 }
 
+/*class: content on the left of the page to be 20px away from each section below with 50px of padding around the content and a box height of 20px. each background with a colour of blue and text in white */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,33 +179,15 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* Consoloditated h2 content into one */
+/*class: each image in the left section to be max height of 200px. headings in the left sections to have margin of 20px from the bottom away from the paragraphs and a font size of 36px */
+ .contentH2 h2{
     margin-bottom: 20px;
     font-size: 36px;
-}
+    max-height: 200px;
+} 
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*class: to have a content of the footer in a padding of 30px, a clear background and text to be in the center of the page */
 .footer {
     padding: 30px;
     clear: both;
